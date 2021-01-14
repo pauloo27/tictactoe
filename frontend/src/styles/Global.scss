@@ -1,0 +1,72 @@
+@import "./Colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $background-main;
+  color: $text-main;
+}
+
+html, body, #root{
+  height: 100%;
+}
+
+.page-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  .text-input {
+    margin-right: 0px;
+    border-radius: 10px 0 0 10px;
+  }
+  .input-icon { 
+    border-radius: 0 10px 10px 0;
+    border-left: 1px solid $green_alt;
+    margin-left: 0px;
+  }
+}
+
+.action-button {
+  background-color: $green;
+  color: $text-main;
+  font-size: 22px;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  border-bottom: $green-alt solid 5px;
+  cursor: pointer;
+}
+
+.action-button:active {
+  border-bottom: $green-alt solid 3px;
+  margin-top: 7px;
+}
+
+.text-input {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 18px;
+  background-color: $green;
+  color: $text-main;
+  border: none;
+  border-bottom: $green-alt 5px solid;
+  border-radius: 10px;
+}
+

@@ -1,0 +1,28 @@
+{
+  "game_title": "Jogo da Velha",
+  "home": {
+    "main": {
+      "play": "Jogar",
+      "join": "Entrar em uma sala",
+      "create": "Nova sala"
+    },
+    "join": {
+      "title": "Entrar",
+      "label": "Convite"
+    },
+    "create": {
+      "title": "Criar",
+      "label": "Compartilhe o convite",
+      "copied": "Copiado!",
+      "wait": "Por favor, aguarde..."
+    }
+  },
+  "game": {
+    "your_turn": "É sua vez!",
+    "not_your_turn": "É a vez do seu oponente, aguarde",
+    "you_win": "Você ganhou!",
+    "you_lost": "Você perdeu!",
+    "play_again": "Jogar novamente",
+    "draw": "Empate"
+  }
+}

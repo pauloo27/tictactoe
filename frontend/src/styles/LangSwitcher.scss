@@ -1,0 +1,26 @@
+@import './Colors.scss';
+#lang-switcher-container {
+  position: absolute;
+  top: 0px;
+
+
+  #lang-options {
+    display: block;
+    transition: opacity 1s;
+    padding: 10px;
+    border: none;
+    margin-left: 5px;
+    background-color: $background-alt;
+    color: $text-main;
+    border-radius: 10px;
+  }
+  
+  #lang-options.hidden {
+    transition: opacity 1s;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}

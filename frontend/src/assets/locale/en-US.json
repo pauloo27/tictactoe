@@ -1,0 +1,28 @@
+{
+  "game_title": "Tic Tac Toe",
+  "home": {
+    "main": {
+      "play": "Play",
+      "join": "Join game",
+      "create": "New game"
+    },
+    "join": {
+      "title": "Join",
+      "label": "Invite"
+    },
+    "create": { 
+      "title": "Create",
+      "label": "Share the invite",
+      "copied": "Copied!",
+      "wait": "Creating, please wait..."
+    }
+  },
+  "game": {
+    "your_turn": "It's your turn!",
+    "not_your_turn": "Wait, it's the opponent turn",
+    "you_win": "You win!",
+    "you_lost": "You lost!",
+    "play_again": "Play again",
+    "draw": "Draw!"
+  }
+}

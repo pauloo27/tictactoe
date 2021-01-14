@@ -1,0 +1,36 @@
+{
+  "name": "tictactoe-backend",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "author": "Pauloo27",
+  "license": "GPL-2.0",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon src/index.ts",
+    "lint": "npx eslint src --ext .ts --fix",
+    "start": "node ."
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.21.1",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@types/bluebird": "^3.5.32",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.11",
+    "@types/socket.io": "^2.1.8",
+    "@types/validator": "^13.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.21.12",
+    "sequelize-typescript": "^1.1.0",
+    "socket.io": "^2.3.0",
+    "sqlite3": "^5.0.0"
+  }
+}

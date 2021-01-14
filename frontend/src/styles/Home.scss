@@ -1,0 +1,40 @@
+@import "./Colors.scss";
+
+#main-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+#game-content {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  padding: 40px;
+  border-radius: 15px;
+
+  background: linear-gradient(to bottom, $red, $red_alt);
+
+  box-shadow: 8px 8px 10px black;
+}
+
+#header-container {
+  img {
+    width: 150px;
+  }
+}
+
+#game-options-container {
+  align-items: center;
+  margin-top: 10px;
+  width: 280px;
+}
+
+@media only screen and (max-width: 600px) {
+  #game-content {
+    flex-direction: column;
+  }
+}
