@@ -31,10 +31,6 @@ export default function Game(props: GameProps) : React.ReactElement {
 
   const checkForWinner = useCallback((cells: Array<Array<CellValue>>) => {
     if (winner !== undefined) return;
-    if (cells.flat().length === 9) {
-      setWinner(null);
-      return;
-    }
     const checkFor = (line: Array<CellValue>): boolean => {
       if (winner !== undefined) return true;
       const ordered = line.sort();
@@ -51,6 +47,10 @@ export default function Game(props: GameProps) : React.ReactElement {
     // diagonals
     if (checkFor([cells[0][0], cells[1][1], cells[2][2]])) return;
     checkFor([cells[0][2], cells[1][1], cells[2][0]]);
+    if (winner === undefined && cells.flat().length === 9) {
+      setWinner(null);
+      return;
+    }
   }, [winner, setWinner]);
 
   const updateCell = useCallback((row: number, column: number, value: CellValue) => {
